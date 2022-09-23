@@ -1,0 +1,16 @@
+oauthlib==2.1.0
+requests-oauthlib==1.1.0
+flask
+flask_cors
+spotipy
+epytech
+PyGithub
+pymongo
+dnspython
+Flask-PyMongo
+Flask-Dance
+Flask-OAuthlib
+flask-mongoengine
+google-auth
+discord-webhook
+Flask-Threads

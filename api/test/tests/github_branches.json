@@ -1,0 +1,7 @@
+{
+    "name" : "github branches",
+    "route" : "/github/branches/Neotoxic-off/phaseout",
+    "method" : "get",
+    "status_code" : 2,
+    "text" : "success"
+}

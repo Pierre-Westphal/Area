@@ -1,0 +1,68 @@
+> Configure project :expo-file-system
+WARNING: Configuration 'testApi' is obsolete and has been replaced with 'testImplementation'.
+It will be removed in version 5.0 of the Android Gradle plugin.
+For more information, see http://d.android.com/r/tools/update-dependency-configurations.html.
+
+> Configure project :expo
+
+Using expo modules
+  - expo-application (4.0.2)
+  - expo-constants (13.0.2)
+  - expo-error-recovery (3.0.5)
+  - expo-file-system (13.1.4)
+  - expo-font (10.0.5)
+  - expo-keep-awake (10.0.2)
+  - expo-modules-core (0.6.5)
+  - expo-splash-screen (0.14.2)
+
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.9/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 3s
+10 actionable tasks: 10 up-to-date
+
+> Configure project :expo-file-system
+WARNING: Configuration 'testApi' is obsolete and has been replaced with 'testImplementation'.
+It will be removed in version 5.0 of the Android Gradle plugin.
+For more information, see http://d.android.com/r/tools/update-dependency-configurations.html.
+
+> Configure project :expo
+
+Using expo modules
+  - expo-application (4.0.2)
+  - expo-constants (13.0.2)
+  - expo-error-recovery (3.0.5)
+  - expo-file-system (13.1.4)
+  - expo-font (10.0.5)
+  - expo-keep-awake (10.0.2)
+  - expo-modules-core (0.6.5)
+  - expo-splash-screen (0.14.2)
+
+
+> Task :app:bundleReleaseJsAndAssets FAILED
+warning: the transform cache was reset.
+error The resource `/home/Thadaze/Teck/B5bis/YEP/B-YEP-500-LYN-5-1-yearendproject-pierre1.westphal/mobile_react/index.android.js` was not found. Run CLI with --verbose flag for more details.
+Error: The resource `/home/Thadaze/Teck/B5bis/YEP/B-YEP-500-LYN-5-1-yearendproject-pierre1.westphal/mobile_react/index.android.js` was not found.
+    at /home/Thadaze/Teck/B5bis/YEP/B-YEP-500-LYN-5-1-yearendproject-pierre1.westphal/mobile_react/node_modules/metro/src/IncrementalBundler.js:157:26
+    at gotStat (fs.js:1936:21)
+    at FSReqCallback.oncomplete (fs.js:191:21)
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:bundleReleaseJsAndAssets'.
+> Process 'command 'node'' finished with non-zero exit value 1
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.9/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD FAILED in 5s
+14 actionable tasks: 14 executed

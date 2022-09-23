@@ -1,0 +1,78 @@
+version: '3.1'
+services:
+    client_web:
+        build: ./front
+        container_name: front
+        hostname: 0.0.0.0
+        restart: always
+        environment:
+            - 0.0.0.0
+        volumes:
+            - /front
+            - share-volume:/app/apk
+        networks:
+            - backend
+        depends_on:
+            - client_mobile
+            - server
+
+    server:
+        build: ./api
+        container_name: api
+        command: python3 api.py debug
+        hostname: 0.0.0.0
+        restart: always
+        environment:
+            - 127.0.0.1
+        links:
+            - mongodb
+        networks:
+            - backend
+
+    mongodb:
+        image: mongo
+        container_name: mongodb
+        hostname: 0.0.0.0
+        volumes:
+            - "./database:/docker-entrypoint-initdb.d/init.sql"
+        environment:
+            - 0.0.0.0
+        ports:
+            - "27017:27017"
+        expose:
+            - "27017"
+        restart: unless-stopped
+        networks:
+            - backend
+
+    client_mobile:
+        build: ./mobile_react
+        container_name: client_mobile
+        hostname: 0.0.0.0
+        restart: always
+        networks:
+            - backend
+        volumes:
+            - share-volume:/mobile/android/app/build/outputs/apk/release
+
+    router:
+        image: "nginx:latest"
+        ports:
+            - "8080:8080"
+            - "8081:8081"
+            - "80:8080"
+        links:
+            - client_web
+            - server
+        volumes:
+            - ./router:/etc/nginx/conf.d:Z
+        networks:
+            - backend
+        restart: always
+
+volumes:
+    share-volume:
+
+networks:
+    backend:
+        driver: bridge

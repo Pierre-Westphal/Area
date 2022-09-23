@@ -1,0 +1,169 @@
+* {
+  text-align: center;
+  color: #FFFFFF;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  font-weight: 500;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+input {
+  color: #000000;
+}
+
+hr {
+  width: 65%;
+  border-color: #000000;
+}
+
+.App {
+  text-align: center;
+  background-color: #424242;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+/* @media (prefers-reduced-motion: no-preference) {
+  .Button {
+    animation: App-logo-spin infinite 10.0s linear;
+  }
+} */
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.Button {
+  width: 124px;
+  background-color: #4848a3;
+  border: none;
+  box-shadow: 0px 0px 7px 0px #000000;
+  border-radius: 8px;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.Button:hover {
+  text-decoration: none;
+  transform: scale(1.1);
+  box-shadow: 0px 0px 16px 0px #FFFFFF;
+}
+
+.Button-red {
+  width: 124px;
+  background-color: #424242;
+  border: none;
+  box-shadow: 0px 0px 7px 0px #000000;
+  border-radius: 8px;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.Button-red:hover {
+  text-decoration: none;
+  transform: scale(1.1);
+  box-shadow: 0px 0px 16px 0px #FFFFFF;
+}
+
+.Button-dis {
+  width: 124px;
+  background-color: #424242;
+  border: none;
+  box-shadow: 0px 0px 7px 0px #000000;
+  border-radius: 8px;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: not-allowed;
+  transition: 0.2s ease-in-out;
+}
+
+.Slider {
+  -webkit-appearance: none;
+  width: 50%;
+  height: 18px;
+  background: #d4d4d4;
+  outline: none;
+  -webkit-transition: .2s;
+  transition: .2s;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.Slider:hover {
+  background: #ffffff;
+}
+
+.Slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border-radius: 8px;
+  width: 20px;
+  height: 30px;
+  background: #4848a3;
+}
+
+.Switch {
+  -webkit-appearance: none;
+  width: 40px;
+  height: 15px;
+  background: #d4d4d4;
+  outline: none;
+  -webkit-transition: .2s;
+  transition: .2s;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.Switch:hover {
+  background: #ffffff;
+}
+
+.Switch::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border-radius: 50px;
+  width: 25px;
+  height: 25px;
+  background: #4848a3;
+}

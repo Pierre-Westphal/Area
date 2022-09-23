@@ -1,0 +1,7 @@
+{
+    "name" : "github actions",
+    "route" : "/github/actions/Neotoxic-off/Epitech2024",
+    "method" : "get",
+    "status_code" : 2,
+    "text" : "success"
+}

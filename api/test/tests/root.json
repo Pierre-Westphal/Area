@@ -1,0 +1,7 @@
+{
+    "name" : "root",
+    "route" : "/",
+    "method" : "get",
+    "status_code" : 1,
+    "text" : "ready"
+}

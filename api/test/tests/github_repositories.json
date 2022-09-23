@@ -1,0 +1,7 @@
+{
+    "name" : "github repositories",
+    "route" : "/github/repositories",
+    "method" : "get",
+    "status_code" : 2,
+    "text" : "success"
+}

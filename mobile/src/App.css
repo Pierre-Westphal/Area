@@ -1,0 +1,116 @@
+* {
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  font-weight: 500;
+  color: #4848a3;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.spotfy {
+  height: calc(100vh)
+}
+
+/* @media (prefers-reduced-motion: no-preference) {
+  .Button {
+    animation: App-logo-spin infinite 10.0s linear;
+  }
+} */
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.Button {
+  width: 124px;
+  background-color: #4848a3;
+  border: none;
+  box-shadow: 0px 0px 7px 0px #000000;
+  border-radius: 8px;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.Button:hover {
+  text-decoration: none;
+  transform: scale(1.1);
+  box-shadow: 0px 0px 16px 0px #FFFFFF;
+}
+
+.logo {
+  width: 25px;
+  height: 25px;
+}
+
+.Button-red {
+  width: 124px;
+  background-color: #424242;
+  border: none;
+  box-shadow: 0px 0px 7px 0px #000000;
+  border-radius: 8px;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.Button-red:hover {
+  text-decoration: none;
+  transform: scale(1.1);
+  box-shadow: 0px 0px 16px 0px #FFFFFF;
+}
